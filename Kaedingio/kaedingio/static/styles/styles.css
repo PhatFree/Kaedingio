@@ -1,0 +1,124 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+
+    color: whitesmoke;
+}
+
+*:hover {
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: #bbf5fc;
+}
+
+a:hover {
+    color: #22c9e6;
+    cursor: pointer;
+}
+
+body {
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.infoDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    width: 90vmin;
+    border-radius: 6vmin;
+    border: .75vmin solid whitesmoke;
+    padding: 3vmin;
+
+    background: radial-gradient( #ff3d5a, #eb3750, #f45144,#f45144
+    );
+    background-size: 1000% 1000%;
+
+    -webkit-animation: BG 20s ease infinite;
+    -moz-animation: BG 20s ease infinite;
+    animation: BG 20s ease infinite;
+
+}
+
+.fullName {
+    font-size: 8vmin;
+    font-weight: 500;
+}
+
+.links {
+    font-size: 2.25vmin;
+    word-spacing: 1vmin;
+}
+
+.description {
+    font-size: 2.25vmin;
+    word-spacing: 0.1vmin;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.backgroundDiv {
+
+    text-align: left;
+    display: block;
+    height: 100%;
+    background: url("/static/SJ.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+   }
+
+@-webkit-keyframes BG {
+    0% {
+        background-position: 1% 0%
+    }
+    50% {
+        background-position: 99% 100%
+    }
+    100% {
+        background-position: 1% 0%
+    }
+}
+
+@-moz-keyframes BG {
+    0% {
+        background-position: 1% 0%
+    }
+    50% {
+        background-position: 9% 100%
+    }
+    100% {
+        background-position: 1% 0%
+    }
+}
+
+@keyframes BG {
+    0% {
+        background-position: 1% 0%
+    }
+    50% {
+        background-position: 99% 100%
+    }
+    100% {
+        background-position: 1% 0%
+    }
+}
+
